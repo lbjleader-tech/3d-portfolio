@@ -1,171 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aiden Zhou — Product & Motion Designer portfolio focused on 3D product motion, rendering, and visual storytelling." />
 
-  <title>CG Portfolio</title>
+  <title>Aiden Zhou | Product & Motion Designer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Aiden Zhou home">Aiden Zhou</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home">首页</a>
+      <a href="#projects">项目</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
 
-  <div class="page">
+  <main>
+    <section class="hero" id="home" aria-label="Aiden Zhou showreel">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <video class="hero-video lazy-video" data-src="media/video/3d-artist-showreel_final.mp4" poster="media/kv/kv_main.webp" muted loop playsinline autoplay preload="none" aria-label="Aiden Zhou showreel background video"></video>
+      <button class="sound-toggle" type="button" data-sound-toggle aria-pressed="false" aria-label="开启视频声音">Sound Off</button>
 
-    <!-- HERO -->
+      <div class="hero-copy" data-fade-on-scroll>
+        <p class="eyebrow">Product Motion Portfolio</p>
+        <h1>Aiden Zhou</h1>
+        <p class="hero-subtitle">Product &amp; Motion Designer | 专注于产品动态叙事与视觉质感表达</p>
+      </div>
+    </section>
 
-    <section class="hero">
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Works</p>
+        <h2 id="projects-title">Visual impact with restraint.</h2>
+      </div>
 
-      <div class="hero-text">
+      <div class="project-grid">
+        <a class="project-tile project-tile-large reveal" href="#project-showreel" aria-label="查看 Aiden Zhou Showreel 项目详情">
+          <img class="lazy-image" data-src="media/kv/kv_main.webp" alt="Aiden Zhou portfolio main key visual" loading="lazy" decoding="async">
+          <span class="project-name">Aiden Zhou Showreel</span>
+        </a>
 
-        <span class="hero-tag">
-          CG VISUAL DESIGNER
-        </span>
+        <a class="project-tile reveal" href="#project-render" aria-label="查看 GM Series Product Render 项目详情">
+          <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="GM Series product render main visual" loading="lazy" decoding="async">
+          <span class="project-name">GM Series Product Render</span>
+        </a>
 
-        <h1>
-          Cinematic<br>
-          motion &<br>
-          immersive<br>
-          visuals.
-        </h1>
+        <a class="project-tile reveal" href="#project-kv" aria-label="查看 Product Key Visual 项目详情">
+          <img class="lazy-image" data-src="media/kv/kv_main.webp" alt="Product key visual cover" loading="lazy" decoding="async">
+          <span class="project-name">Product Key Visual</span>
+        </a>
+      </div>
+    </section>
 
-        <p>
-          3D motion, lighting, futuristic aesthetics,
-          and visual storytelling focused on cinematic
-          digital experiences.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="#">
-            Email me
-          </a>
-
-          <a href="#" class="ghost">
-            Portfolio
-          </a>
-
+    <section class="project-detail" id="project-showreel" aria-labelledby="showreel-title">
+      <div class="detail-video-wrap reveal">
+        <video class="detail-video lazy-video" data-src="media/video/3d-artist-showreel_final.mp4" poster="media/kv/kv_main.webp" muted loop playsinline autoplay preload="none" aria-label="Aiden Zhou showreel project video"></video>
+        <div class="detail-title">
+          <p class="eyebrow">Project 01</p>
+          <h2 id="showreel-title">Aiden Zhou Showreel</h2>
         </div>
-
       </div>
-
-      <div class="hero-media">
-
-        <video autoplay muted loop playsinline>
-          <source src="./media/video/hero-tree.mp4" type="video/mp4">
-        </video>
-
+      <div class="render-grid reveal">
+        <img class="lazy-image" data-src="media/kv/kv_main.webp" alt="Showreel key visual render" loading="lazy" decoding="async">
+        <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="Product internal render detail" loading="lazy" decoding="async">
       </div>
-
     </section>
 
-
-    <!-- PROJECT 01 -->
-    <!-- 左视频 右文字 -->
-
-    <section class="project-card">
-
-      <div class="project-media dark">
-
-        <video autoplay muted loop playsinline>
-          <source src="./media/video/CANDY.mp4" type="video/mp4">
-        </video>
-
+    <section class="project-detail" id="project-render" aria-labelledby="render-title">
+      <div class="detail-hero-image reveal">
+        <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="GM Series product render hero image" loading="lazy" decoding="async">
+        <div class="detail-title">
+          <p class="eyebrow">Project 02</p>
+          <h2 id="render-title">GM Series Product Render</h2>
+        </div>
       </div>
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 01
-        </span>
-
-        <h2>
-          Candy<br>
-          Motion<br>
-          System
-        </h2>
-
-        <p>
-          Soft-body motion study with cinematic lighting
-          and surreal material atmosphere.
-        </p>
-
+      <div class="render-grid render-grid-wide reveal">
+        <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="GM Series product render composition" loading="lazy" decoding="async">
+        <img class="lazy-image" data-src="media/kv/kv_main.webp" alt="GM Series key visual composition" loading="lazy" decoding="async">
+        <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="GM Series internal product material study" loading="lazy" decoding="async">
       </div>
-
     </section>
 
-
-    <!-- PROJECT 02 -->
-    <!-- 左文字 右KV -->
-
-    <section class="project-card">
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 02
-        </span>
-
-        <h2>
-          Futuristic<br>
-          KV
-        </h2>
-
-        <p>
-          High-impact key visual design combining cinematic
-          composition and sci-fi aesthetics.
-        </p>
-
+    <section class="project-detail" id="project-kv" aria-labelledby="kv-title">
+      <div class="detail-video-wrap reveal">
+        <video class="detail-video lazy-video" data-src="media/video/3d-artist-showreel_final.mp4" poster="media/kv/kv_main.webp" muted loop playsinline autoplay preload="none" aria-label="Product key visual motion project video"></video>
+        <div class="detail-title">
+          <p class="eyebrow">Project 03</p>
+          <h2 id="kv-title">Product Key Visual</h2>
+        </div>
       </div>
-
-      <div class="project-media light">
-
-        <img src="./media/kv/s1-kv.jpg" alt="kv">
-
+      <div class="render-grid reveal">
+        <img class="lazy-image" data-src="media/kv/kv_main.webp" alt="Product key visual detail" loading="lazy" decoding="async">
+        <img class="lazy-image" data-src="media/render/gm_series_06_internal.webp" alt="Product render supporting visual" loading="lazy" decoding="async">
       </div>
-
     </section>
 
-
-    <!-- PROJECT 03 -->
-    <!-- 左手机 右文字 -->
-
-    <section class="project-card render-card">
-
-      <div class="project-media dark render-media">
-
-        <img src="./media/render/cpu.png" alt="render">
-
-      </div>
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 03
-        </span>
-
-        <h2>
-          Product<br>
-          Render
-        </h2>
-
-        <p>
-          Clean industrial product visualization focused on
-          precision modeling and material realism.
-        </p>
-
-      </div>
-
+    <section class="about reveal" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">I build quiet interfaces for loud product visuals.</h2>
+      <p>Aiden Zhou 是一名专注于产品动态表现的 3D 设计师，围绕产品叙事、材质质感、镜头节奏与高级渲染呈现，创作具有视觉冲击力的动态作品。</p>
     </section>
+  </main>
 
-  </div>
+  <script>
+    const header = document.querySelector('[data-header]');
+    const heroCopy = document.querySelector('[data-fade-on-scroll]');
+    const soundToggle = document.querySelector('[data-sound-toggle]');
+    const heroVideo = document.querySelector('.hero-video');
 
+    const loadMedia = (element) => {
+      const source = element.dataset.src;
+      if (!source || element.dataset.loaded === 'true') return;
+      element.src = source;
+      element.dataset.loaded = 'true';
+      if (element.tagName === 'VIDEO') {
+        element.load();
+        element.play().catch(() => {});
+      }
+    };
+
+    const mediaObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadMedia(entry.target);
+          mediaObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '220px 0px' });
+
+    document.querySelectorAll('.lazy-image, .lazy-video').forEach((element) => mediaObserver.observe(element));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.16 });
+
+    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+    const updateScrollState = () => {
+      const progress = Math.min(window.scrollY / Math.max(window.innerHeight * 0.7, 1), 1);
+      header.classList.toggle('is-scrolled', window.scrollY > 24);
+      if (heroCopy) {
+        heroCopy.style.opacity = String(1 - progress * 0.92);
+        heroCopy.style.transform = `translate3d(0, ${progress * 42}px, 0)`;
+      }
+    };
+
+    window.addEventListener('scroll', updateScrollState, { passive: true });
+    updateScrollState();
+
+    if (soundToggle && heroVideo) {
+      soundToggle.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        soundToggle.setAttribute('aria-pressed', String(!heroVideo.muted));
+        soundToggle.setAttribute('aria-label', heroVideo.muted ? '开启视频声音' : '关闭视频声音');
+        soundToggle.textContent = heroVideo.muted ? 'Sound Off' : 'Sound On';
+        if (!heroVideo.muted) heroVideo.play().catch(() => {});
+      });
+    }
+  </script>
 </body>
+
 </html>
