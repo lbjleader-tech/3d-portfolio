@@ -1,171 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>CG Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Aiden Zhou — Product Motion / CG Visual Designer portfolio for cinematic product rendering, key visuals and motion storytelling." />
+  <title>Aiden Zhou — Product Motion Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <div class="page">
+  <header class="site-header" data-reveal>
+    <a class="brand" href="#hero" aria-label="Aiden Zhou home">AZ<span>26</span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#showreel">Showreel</a>
+      <a href="#kv-feature">KV</a>
+      <a href="#motion">Motion</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- HERO -->
+  <main>
+    <section id="hero" class="hero section snap-section" data-section="01">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="media/kv/kv_main.webp">
+        <source src="media/video/video-hero-product-animation-final.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="scanline" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-a" data-parallax="-18" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-b" data-parallax="24" aria-hidden="true"></div>
 
-    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow hero-kicker" data-reveal>PRODUCT MOTION PORTFOLIO</p>
+        <h1 class="hero-title" data-reveal>Aiden<br />Zhou</h1>
+        <p class="hero-subtitle" data-reveal>Product &amp; Motion Designer ｜ 专注于产品动态叙事与视觉质感表达</p>
+      </div>
 
-      <div class="hero-text">
+      <a class="scroll-cue" href="#showreel" data-reveal>
+        <span>Scroll to Explore</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
 
-        <span class="hero-tag">
-          CG VISUAL DESIGNER
-        </span>
-
-        <h1>
-          Cinematic<br>
-          motion &<br>
-          immersive<br>
-          visuals.
-        </h1>
-
-        <p>
-          3D motion, lighting, futuristic aesthetics,
-          and visual storytelling focused on cinematic
-          digital experiences.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="#">
-            Email me
-          </a>
-
-          <a href="#" class="ghost">
-            Portfolio
-          </a>
-
+    <section id="showreel" class="section showreel snap-section">
+      <div class="section-shell">
+        <div class="section-heading split-heading" data-reveal>
+          <p class="eyebrow">SHOWREEL 2026</p>
+          <h2>Cinematic motion systems for product-led storytelling.</h2>
+          <p class="section-copy">A concentrated reel of launch films, macro-material studies, CG product rhythm, and atmosphere-driven transitions built for premium technology brands.</p>
         </div>
 
+        <div class="showreel-frame magnetic-card" data-reveal>
+          <video class="showreel-video" controls playsinline preload="metadata" poster="media/kv/kv_main.webp">
+            <source src="media/video/3d-artist-showreel-final.mp4" type="video/mp4" />
+          </video>
+          <div class="player-meta">
+            <span>04K / 24FPS</span>
+            <span>PRODUCT MOTION / CG / EDIT</span>
+          </div>
+        </div>
       </div>
-
-      <div class="hero-media">
-
-        <video autoplay muted loop playsinline>
-          <source src="./media/video/hero-tree.mp4" type="video/mp4">
-        </video>
-
-      </div>
-
     </section>
 
-
-    <!-- PROJECT 01 -->
-    <!-- 左视频 右文字 -->
-
-    <section class="project-card">
-
-      <div class="project-media dark">
-
-        <video autoplay muted loop playsinline>
-          <source src="./media/video/CANDY.mp4" type="video/mp4">
-        </video>
-
+    <section id="kv-feature" class="section feature feature-kv snap-section">
+      <div class="feature-panel">
+        <div class="feature-copy" data-reveal>
+          <p class="eyebrow">PROJECT 01</p>
+          <h2>Futuristic<br />KV</h2>
+          <p>High-impact key visual design combining cinematic composition and sci-fi aesthetics.</p>
+          <div class="spec-row" aria-label="Project attributes">
+            <span>Key Visual</span>
+            <span>Cinematic Lighting</span>
+            <span>Launch Campaign</span>
+          </div>
+        </div>
+        <figure class="feature-media kv-media magnetic-card" data-parallax="10" data-reveal>
+          <img src="media/kv/kv_main.webp" alt="Futuristic key visual campaign with product composition" loading="lazy" />
+        </figure>
       </div>
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 01
-        </span>
-
-        <h2>
-          Candy<br>
-          Motion<br>
-          System
-        </h2>
-
-        <p>
-          Soft-body motion study with cinematic lighting
-          and surreal material atmosphere.
-        </p>
-
-      </div>
-
     </section>
 
-
-    <!-- PROJECT 02 -->
-    <!-- 左文字 右KV -->
-
-    <section class="project-card">
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 02
-        </span>
-
-        <h2>
-          Futuristic<br>
-          KV
-        </h2>
-
-        <p>
-          High-impact key visual design combining cinematic
-          composition and sci-fi aesthetics.
-        </p>
-
+    <section id="render-feature" class="section feature feature-render snap-section">
+      <div class="feature-panel render-panel">
+        <figure class="feature-media render-media magnetic-card" data-parallax="-12" data-reveal>
+          <img src="media/render/gm_series_06_internal.webp" alt="Industrial product internal render with precision details" loading="lazy" />
+        </figure>
+        <div class="feature-copy" data-reveal>
+          <p class="eyebrow">PROJECT 02</p>
+          <h2>Product<br />Render</h2>
+          <p>Clean industrial product visualization focused on precision modeling and material realism.</p>
+          <div class="spec-row" aria-label="Project attributes">
+            <span>Industrial Design</span>
+            <span>Material Realism</span>
+            <span>Macro Detail</span>
+          </div>
+        </div>
       </div>
-
-      <div class="project-media light">
-
-        <img src="./media/kv/s1-kv.jpg" alt="kv">
-
-      </div>
-
     </section>
 
-
-    <!-- PROJECT 03 -->
-    <!-- 左手机 右文字 -->
-
-    <section class="project-card render-card">
-
-      <div class="project-media dark render-media">
-
-        <img src="./media/render/cpu.png" alt="render">
-
+    <section id="motion" class="section motion-section snap-section">
+      <div class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">SELECTED MOTION WORKS</p>
+          <h2>Motion studies tuned for rhythm, surface, and reveal.</h2>
+        </div>
+        <div class="motion-rail" id="motionRail" aria-label="Selected motion works horizontal gallery"></div>
       </div>
-
-      <div class="project-info">
-
-        <span class="project-number">
-          PROJECT 03
-        </span>
-
-        <h2>
-          Product<br>
-          Render
-        </h2>
-
-        <p>
-          Clean industrial product visualization focused on
-          precision modeling and material realism.
-        </p>
-
-      </div>
-
     </section>
 
-  </div>
+    <section id="kv-gallery" class="section kv-gallery-section snap-section">
+      <div class="section-shell wide">
+        <div class="section-heading split-heading" data-reveal>
+          <p class="eyebrow">KV GALLERY</p>
+          <h2>Film-poster scale visual worlds with hard product focus.</h2>
+          <p class="section-copy">A cinematic wall of campaign frames, sci-fi UI compositions, high-contrast product moments, and atmospheric image systems.</p>
+        </div>
 
+        <div class="cinema-strip" id="kvCinemaStrip" aria-label="Horizontal cinematic key visual gallery"></div>
+        <div class="masonry-grid" id="kvMasonryGrid" aria-label="Masonry key visual gallery"></div>
+      </div>
+    </section>
+
+    <section id="render-exploration" class="section render-exploration snap-section">
+      <div class="section-shell wide">
+        <div class="section-heading split-heading" data-reveal>
+          <p class="eyebrow">INDUSTRIAL PRODUCT EXPLORATION</p>
+          <h2>Precision renders arranged like a future hardware magazine.</h2>
+          <p class="section-copy">White studio product shots collide with deep black technical renders, creating a floating editorial layout for form, detail, and material.</p>
+        </div>
+        <div class="render-board" id="renderBoard" aria-label="Industrial product render exploration"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section snap-section">
+      <div class="about-grid section-shell">
+        <div data-reveal>
+          <p class="eyebrow">ABOUT</p>
+          <h2>Designing product images that feel engineered, emotional, and cinematic.</h2>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p>Aiden Zhou is a Product Motion / CG Visual Designer focused on premium technology storytelling, industrial render direction, and launch-ready visual systems.</p>
+          <p>The work combines product thinking, 3D lighting, material design, motion pacing, and high-impact key visuals for interview-ready presentations and brand campaigns.</p>
+          <div class="capability-grid">
+            <span>Product Animation</span>
+            <span>CG Visual Direction</span>
+            <span>Key Visual Systems</span>
+            <span>Industrial Rendering</span>
+            <span>Motion Editing</span>
+            <span>Cinematic Lookdev</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section snap-section">
+      <div class="contact-card magnetic-card" data-reveal>
+        <p class="eyebrow">CONTACT</p>
+        <h2>Available for product motion, launch films, and visual design roles.</h2>
+        <div class="contact-actions">
+          <a href="mailto:hello@aidenzhou.design">hello@aidenzhou.design</a>
+          <a href="tel:+8613800000000">+86 138 0000 0000</a>
+        </div>
+        <p class="footer-note">© 2026 Aiden Zhou — Product Motion Portfolio</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
